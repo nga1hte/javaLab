@@ -68,5 +68,11 @@ public class Matrix{
         ans = m1.multiply(m2);
         System.out.println("\nProduct of the two matrix is: ");
         ans.print_m();
+
+        //destructor
+        m1 = null;
+        m2 = null;
+        ans = null;
+        System.gc();
     }
 }
